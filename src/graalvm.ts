@@ -109,14 +109,13 @@ function findDownloadUrl(
     javaVersion
   )
   const expectedFileName = `${graalVMIdentifier}${c.GRAALVM_FILE_EXTENSION}`
-  console.info(expectedFileName);
   for (const asset of release.assets) {
     if (asset.name === expectedFileName) {
       return asset.browser_download_url
     }
   }
   throw new Error(
-    `Could not find GraalVM dev build for Java ${javaVersion}. It may no longer be available, so please consider upgrading the Java version. If you think this is a mistake, please file an issue at: https://github.com/graalvm/setup-graalvm/issues.`
+    `Could not find GraalVM dev build for Java ${javaVersion}. ${expectedFileName} It may no longer be available, so please consider upgrading the Java version. If you think this is a mistake, please file an issue at: https://github.com/graalvm/setup-graalvm/issues.`
   )
 }
 
