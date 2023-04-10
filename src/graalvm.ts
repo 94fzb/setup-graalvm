@@ -109,6 +109,7 @@ function findDownloadUrl(
     javaVersion
   )
   const expectedFileName = `${graalVMIdentifier}${c.GRAALVM_FILE_EXTENSION}`
+  console.info(expectedFileName);
   for (const asset of release.assets) {
     if (asset.name === expectedFileName) {
       return asset.browser_download_url
