@@ -1,4 +1,4 @@
-name: 'GitHub Action for GraalVM'
+name: 'GitHub Action for GraalVM for test'
 description: 'Set up a specific version of GraalVM Community Edition (CE) or Enterprise Edition (EE)'
 author: 'GraalVM Community'
 branding:
