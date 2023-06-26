@@ -155,6 +155,8 @@ async function downloadTool(
         }
       }
 
+      console.error(err);
+
       // Otherwise retry
       return true
     }
